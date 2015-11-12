@@ -1,0 +1,12 @@
+<table class="table table-bordered">
+  <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Details</th>
+  </tr>
+  <tr ng-repeat="user in listCtrl.users">
+    <td><img src="{{user.picture.thumbnail}}" /></td>
+    <td>{{user.first}} {{user.last}}</td>
+    <td><a href="#/user/{{user.first}}{{user.last}}">Details</a></td>
+  </tr>
+</table>
